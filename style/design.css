@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.manrope{
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+}
+
+/* shared style */
+.btn-primary{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(270.00deg, rgb(255, 0, 0) 0%,rgb(255, 137, 56) 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-title{
+    font-size: 2.81rem;
+    font-weight: 800;
+    color: rgb(28, 28, 28)
+}
+.section-description{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgb(119, 119, 119);
+}
+
+
+
+/* banner related style starts here */
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 67px;
+}
+.header-relative{
+    display: flex;
+    gap: 10px;
+    /* margin-left: 150px; */
+}
+.banner-text{
+    width: 628px;
+    height: 499px;
+
+}
+.banner-img{
+    width: 655px;
+    height: 499px;
+    margin-top: 67px;
+    position: relative;
+    border: 2px dashed rgba(119, 119, 119, 0.425);
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+}
+.up-right-arrow{
+    margin-left: 10px;
+}
+.banner-title{
+    font-size: 5.3rem;
+    font-weight: 800;
+    color: rgb(28, 28, 28);
+    line-height: 100px;
+    margin: 0;
+}
+.banner-description{
+    color: rgb(119, 119, 119);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+}
+.banner-card{
+    width: 255px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    left: 10%;
+    bottom: 2%;
+}
+.star{
+    color: gold;
+    font-size: 2rem;
+}
+.banner-card-title{
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: 0;
+}
+.card-description{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(119, 119, 119);
+    margin: 0;
+}
+/* banner related style ends here */
+/* product section related style starts here */
+.product{
+    max-width: 1140px;
+    margin: 130px auto;
+}
+.product-text-1{
+    width: 901px;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.product-container{
+    display: flex;
+    justify-content: space-between;
+}
+.product-sample{
+    width: 267px;
+    border-radius: 10px;background: linear-gradient(180.00deg, rgb(244, 244, 244),rgba(244, 244, 244, 0) 100%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+.product-img{
+    width: 135px;
+    height: 235px;
+    border: 2.3px dashed rgba(128, 128, 128, 0.401);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-text{
+    width: 208px;
+    height: 84px;
+    margin: 0 auto;
+    text-align: center;
+}
+.product-text-title{
+    font-size: 1.56rem;
+    font-weight: 800;
+    color: rgb(28, 28, 28);
+    margin-bottom: 15px;
+}
+.product-text-description{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 22px;
+    color: rgb(119, 119, 119);
+}
+/* product section related style ends here */
+
+
+
+/* responsive media query starts */
+@media screen and (max-width: 576px){
+    .section-title{
+        font-size: 2.3rem;
+        line-height: 110%;
+    }
+
+     header{
+        margin-top: 30px;
+     }
+    .header-relative{
+        flex-direction: column;
+        gap: 60px;
+        
+    }
+    .banner-text{
+        width: calc(100% - 40px);
+        height: auto;
+        margin: 0 auto;
+    }
+    .banner-title{
+        font-size: 2.8rem;
+        line-height: 100%;
+        margin-bottom: 50px;
+    }
+    .banner-img{
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .banner-text button{
+        margin-top: 30px;
+    }
+    .banner-card{
+        width: 210px;
+        height: auto;
+        padding: 10px;
+        left: 1%;
+    }
+    .product-text-1{
+        width: calc(100% - 25px);
+    }
+
+
+    .product-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+    
